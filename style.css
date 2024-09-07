@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sankofa+Display&display=swap');
+
+/* General styles */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+
+
+.main {
+    background-image: url("Assests/images/bg.jpg");
+    min-height: 70vh;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    /* Ensure the image covers the container */
+    background-attachment: fixed;
+    /* Keep the background image fixed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center the content vertically */
+    align-items: center;
+    /* Center the content horizontally */
+}
+
+/* Ensure .box is positioned behind other content */
+.main .box {
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+/* Adjusted navigation styles */
+nav {
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    height: 62px;
+    z-index: 10;
+    padding-top: 0;
+    /* Align items to the top */
+    position: relative;
+    /* Ensure positioning works for child elements */
+    width: 100%;
+    /* Ensure the nav takes full width */
+}
+
+/* Adjusted logo height for consistency */
+nav img {
+    filter:invert(1) ;
+    fill: #ff0000;
+    color: rgb(229, 9, 20);
+    fill: currentColor;
+    height: 55px;
+    /* Fixed height for the logo */
+    width: auto;
+    /* Ensure width adjusts to maintain aspect ratio */
+    object-fit: contain;
+    /* Ensure the logo scales properly */
+    margin-top: 29px;
+    /* Remove margin to align with the top */
+}
+
+/* Adjusted alignment for button */
+nav div {
+    margin-left: 727px;
+    margin-top: 28px;
+    /* Adjust spacing as needed */
+}
+
+/* Adjusted button styles for alignment */
+.b1 button {
+    font-weight: 700;
+    background-color: red;
+    color: white;
+    padding: 10px 27px;
+    font-size: 20px;
+    border-radius: 8px;
+    z-index: 10;
+
+    white-space: nowrap;
+    /* Prevent text wrapping */
+}
+
+/* Adjusted hero styles */
+.hero {
+    height: calc(100%-62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    gap: 23px;
+    z-index: 10;
+    padding-bottom: 70px;
+    text-align: center;
+    /* Center text */
+    /* padding: 0 30px; */
+    padding-top: 172px;
+}
+
+/* Ensure hero section doesn't push .line out of view */
+.hero> :nth-child(1) {
+    font-family: "Poppins Static", sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.line {
+    height: 7px;
+    background-color: #312f2f;
+    width: 100%;
+    margin-top: 179px;
+    margin-bottom: 0px;
+    /* Adjust margin as needed */
+    position: relative;
+    /* Ensure it's positioned within its section */
+    z-index: 10;
+    /* Ensure it stays above background elements */
+}
+
+.line2 {
+    height: 7px;
+    background-color: #312f2f;
+    width: 100%;
+    /* Ensure line spans the full width */
+    position: absolute;
+    /* Position it relative to .main */
+    bottom: -462px;
+    /* Align to the bottom of .main */
+    z-index: 10;
+    /* Ensure line stays above background */
+}
+
+.line3 {
+    height: 7px;
+    background-color: #312f2f;
+    width: 100%;
+    /* Ensure line spans the full width */
+    position: absolute;
+    /* Position it relative to .main */
+    bottom: -934px;
+    /* Align to the bottom of .main */
+    z-index: 10;
+    /* Ensure line stays above background */
+}
+
+.line4 {
+    height: 7px;
+    background-color: #312f2f;
+    width: 100%;
+    /* Ensure line spans the full width */
+    position: absolute;
+    /* Position it relative to .main */
+    bottom: -1116px;
+    /* Align to the bottom of .main */
+    z-index: 10;
+    /* Ensure line stays above background */
+}
+
+.b2 button {
+    border-radius: 6px;
+    /* font-weight: bold; */
+    color: white;
+    background-color: red;
+    padding: 9px 16px;
+    font-size: 20px;
+    font-family:"Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+.main input {
+    background-color: rgba(23, 23, 23, 0.5);
+    padding: 14px 118px 11px 7px;
+    font-size: 17px;
+    font-family: "Poppins Static", sans-serif;
+    font-weight: 500;
+    border: 1px solid rgba(246, 238, 238, 0.3);
+    color: white;
+
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+
+.secimg img {
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+
+.secimg {
+    position: relative;
+}
+
+.secimg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+section.third>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: -425px;
+}
+
+section.fourth>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 62px;
+    margin-bottom: -85px;
+
+}
+
+section.fourth>div>img {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: -350px;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+section.third>div :nth-child(1) {
+    margin-top: 88px;
+}
+
+section.third>div :nth-child(2) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+section.fourth>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+    margin-top: 23px;
+}
+
+section.third>div :nth-child(3) {
+    font-size: 24px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+section.third>div :nth-child(4) {
+    font-size: 24px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+
+}
+
+section.third>div :nth-child(5) {
+    font-size: 24px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    margin-bottom: -90px;
+}
+
+section.fourth>div>img {
+    margin-top: 158px;
+    margin-left: -195px;
+
+}
+
+section.fourth>div :nth-child(2) {
+    font-size: 24px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+
+}
+
+section.fourth>div :nth-child(3) {
+    font-size: 24px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+
+}
+
+section.fourth>div :nth-child(4) {
+    font-size: 24px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+
+}
+.faq h2{
+    font-weight: 900;
+font-size: 48px;
+text-align: center;
+margin-top: 43px;
+}
+.faq{
+    background:black;
+    color:white;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+
+}
+.faqbox:hover{
+    background-color: #403f3f
+}
+.faqbox {
+transition: all 1sec ease-out;
+    color: white;
+    cursor: pointer;
+    margin: 34px auto;
+    max-width: 40vw;
+    display: flex;
+    background-color: rgb(46 44 44);
+    padding: 17px 220px 23px 32px;
+    font-weight: 400;
+    font-size: 24px;
+    justify-content: space-between;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+
+    
+    
+}
+.faqbox svg{
+    margin: 7px -145px -2px -73px;
+    color: white;
+}
+
+.last{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.last span{
+    font-size: 20px;
+    margin-bottom: 23px;
+    color:white;
+    margin-top: 23px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+.last input{
+    background-color: rgba(23, 23, 23, 0.5);
+    padding: 14px 118px 11px 7px;
+    font-size: 17px;
+    font-family: "Poppins Static", sans-serif;
+    font-weight: 500;
+    border: 1px solid rgba(246, 238, 238, 0.3);
+    color: white;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+}
+
+ footer div:nth-child(1){
+    margin: 23px;
+   
+    font-size: 16px;
+ }
+.footer-items a{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    
+}
+.footer-items button{
+    margin-left: 1px;
+    border: 1px solid white;
+    margin-right: 148px;
+    padding: 9px 24px 7px 16px;
+    background-color: rgba(23, 23, 23, 0.5);
+    color: white;
+}
+.footer-items{
+    margin-top: 58px;
+    gap: 15px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+   
+}
+@media  screen and (max-width:430px) {
+    nav img{
+        width: 80px;
+    }
+    .b1 button {
+        margin-right: 139px;
+        margin-left: -298px;
+        padding: 23px 86px 19px 16px;
+        
+    }
+}
